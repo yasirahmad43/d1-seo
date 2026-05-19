@@ -1,0 +1,3 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "//": "Vercel HOBBY plan only allows daily crons. For sub-daily polling (e.g. the every-30-min WP watcher) point cron-job.org (free, every-minute) at /api/sync/wp with x-api-token. Or 

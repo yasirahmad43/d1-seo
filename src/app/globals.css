@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* D1TechCreative brand tokens — mirror of the d1app / d1-affiliates palette. */
+:root {
+  --color-bg:           #06091a;
+  --color-surface:      #0b1230;
+  --color-surface-2:    #0f1a3d;
+  --color-fg:           #fafafa;
+  --color-muted:        #1a1f3a;
+  --color-border:       #1d2a5c;
+  --color-brand:        #2563eb;
+  --color-brand-2:      #3b82f6;
+  --color-brand-soft:   #93c5fd;
+  --color-brand-glow:   rgba(37, 99, 235, 0.35);
+}
+
+html, body { background: var(--color-bg); color: var(--color-fg); }
+body { font-family: 'DM Sans', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-variant-numeric: tabular-nums; }
+
+/* --- Reusable surface classes (consistent across components) --- */
+.card          { @apply rounded-2xl border p-5 shadow-lg; background: var(--color-surface); border-color: var(--color-border); }
+.card-2        { @apply rounded-xl border p-4; background: var(--color-surface-2); border-color: var(--color-border); }
+.kpi      

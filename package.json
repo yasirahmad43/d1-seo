@@ -1,0 +1,35 @@
+{
+  "name": "d1-seo-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "sync:gsc": "tsx scripts/sync-gsc.ts",
+    "sync:ga4": "tsx scripts/sync-ga4.ts",
+    "seed": "tsx scripts/seed.ts",
+    "verify:pg": "tsx scripts/verify-pg.mjs"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.5.1",
+    "@supabase/supabase-js": "^2.45.0",
+    "googleapis": "^144.0.0",
+    "lucide-react": "^0.460.0",
+    "next": "16.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^2.13.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.2.0",
+    "@types/node": "^22.7.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.0.0",
+    "postcss": "^8.4.49",
+    "

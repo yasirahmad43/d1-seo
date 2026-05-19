@@ -1,0 +1,38 @@
+boot pglite + stub auth schema
+apply 0001_init.sql
+apply 0002_automation.sql
+apply 0003_d1_conventions.sql
+apply seed.sql
+
+================  RESULTS  ================
+public tables: 28
+RLS policies : 45
+updated_at triggers: 15
+
+D1-convention tables present:
+ * deleted_items
+ * notification_preferences
+ * notifications
+ * users
+
+seeded clients:
+ * A Plus Moving & Storage · https://aplusmovingandstorage.co
+ * Mary Angels Home Care · https://maryangelshomecare.com
+
+KPI view still works:
+┌─────────┬─────────────────┬─────────────────┬────────────┬────────┐
+│ (index) │ slug            │ impressions_28d │ clicks_28d │ pos    │
+├─────────┼─────────────────┼─────────────────┼────────────┼────────┤
+│ 0       │ 'a-plus-moving' │ 3725            │ 56         │ '27.7' │
+│ 1       │ 'mary-angels'   │ 643             │ 21         │ '33.1' │
+└─────────┴─────────────────┴─────────────────┴────────────┴────────┘
+
+SEO leads vs total:
+┌─────────┬─────────────────┬───────────┬───────┐
+│ (index) │ slug            │ seo_leads │ total │
+├─────────┼─────────────────┼───────────┼───────┤
+│ 0       │ 'a-plus-moving' │ 2         │ 5     │
+│ 1       │ 'mary-angels'   │ 2         │ 2     │
+└─────────┴─────────────────┴───────────┴───────┘
+
+OK -- 3 migrations + seed apply cleanly; data layer is wired correctly.
