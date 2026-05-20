@@ -6,11 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "sync:gsc": "tsx scripts/sync-gsc.ts",
-    "sync:ga4": "tsx scripts/sync-ga4.ts",
-    "seed": "tsx scripts/seed.ts",
-    "verify:pg": "tsx scripts/verify-pg.mjs"
+    "lint": "next lint"
   },
   "dependencies": {
     "@supabase/ssr": "^0.5.1",
@@ -32,4 +28,6 @@
     "eslint-config-next": "^15.0.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.14",
-    "tsx"
+    "typescript": "^5.6.3"
+  }
+}
