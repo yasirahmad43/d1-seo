@@ -185,3 +185,4 @@ Then create an invitation for the client owner via `/admin/invites`.
 ## 8. What's deliberately not in MVP (yet)
 
 - **Bing Webmaster Tools** sync — wire after Phil shares his Microsoft creden
+<!-- deploy trigger: 2026-05-20T00:03:49.491Z -->
