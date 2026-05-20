@@ -6,15 +6,15 @@ export default async function AgencyLayout({ children }: { children: React.React
   const user = await requireAgency();
   return (
     <div className="min-h-screen">
-      <header className="bg-brand-dark text-white">
+      <header className="text-white" style={{ background: '#0A2540' }}>
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-6">
             <Link href="/admin" className="font-bold">D1 SEO · Agency</Link>
             <nav className="flex items-center gap-4 text-sm">
-              <Link href="/admin" className="hover:underline">Clients</Link>
-              <Link href="/admin/changelog" className="hover:underline">Post update</Link>
-              <Link href="/admin/invites" className="hover:underline">Invites</Link>
-              <Link href="/admin/automation" className="hover:underline">Automation</Link>
+              <Link href="/admin">Clients</Link>
+              <Link href="/admin/changelog">Post update</Link>
+              <Link href="/admin/invites">Invites</Link>
+              <Link href="/admin/automation">Automation</Link>
             </nav>
           </div>
           <div className="flex items-center gap-3 text-sm">
@@ -22,4 +22,8 @@ export default async function AgencyLayout({ children }: { children: React.React
             <SignOutButton />
           </div>
         </div>
-      </heade
+      </header>
+      <main className="max-w-7xl mx-auto px-4 py-6">{children}</main>
+    </div>
+  );
+}
